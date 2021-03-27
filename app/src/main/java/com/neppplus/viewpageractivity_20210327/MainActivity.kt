@@ -13,10 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        뷰페이저 어댑터 + ViewPager 조합
         mvpa = MainViewPagerAdapter(supportFragmentManager)
-
         mainViewPager.adapter = mvpa
 
+//        ViewPager + TabLayout 조합
+        myTabLayout.setupWithViewPager(mainViewPager)
 
 
     }
