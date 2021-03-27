@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ViewPagerActivity_20210327"
